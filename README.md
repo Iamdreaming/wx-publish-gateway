@@ -464,6 +464,19 @@ python -m pytest -q
 
 ---
 
+## 配套 Skill
+
+[`skills/mp-draft-push/`](./skills/mp-draft-push/) — 微信公众号草稿箱发布 Skill，包含：
+
+- **SKILL.md** — 完整发布流程（排版 → 上传封面 → 上传内图 → 创建草稿）+ 19 条实战 pitfall
+- **scripts.sh** — bash 辅助函数：网关模式优先 + 旧直连 fallback
+- **scripts/md_to_wechat_html.py** — Markdown → 微信兼容内联样式 HTML 转换器
+- **references/** — 封面兜底方案、代理配置、API 错误码速查、API 限制说明
+
+使用 wx-publish-gateway 的 Agent / 脚本可直接引用此 Skill 中的脚本和经验。
+
+---
+
 ## License
 
 MIT
